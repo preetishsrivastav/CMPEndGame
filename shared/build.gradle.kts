@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.android.kotlin.multiplatform.library)
     alias(libs.plugins.compose.multiplatform)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.pluginSerialization)
 }
 
 kotlin {
@@ -67,6 +68,21 @@ kotlin {
                 implementation(libs.kotlin.stdlib)
 
                 // Add KMP dependencies here
+                implementation(libs.kotlinx.serialization.json)
+
+                // Ktor Dependencies
+                implementation(libs.ktor.client.core)
+                implementation(libs.ktor.client.logging)
+                implementation(libs.ktor.serialization.kotlinx.json)
+                implementation(libs.ktor.client.content.negotiation)
+                implementation(libs.ktor.client.encoding)
+
+                // Koin Dependencies
+                api(libs.koin.core)
+                implementation(libs.koin.compose)
+
+                // Logging
+                implementation(libs.log.kermit)
             }
         }
 
@@ -87,6 +103,13 @@ kotlin {
                 implementation(libs.androidx.ui.graphics)
                 implementation(libs.androidx.ui.tooling.preview)
                 implementation(libs.androidx.material3)
+
+                implementation(libs.okhttp.logger)
+                implementation(libs.ktor.client.okhttp)
+
+                implementation(libs.koin.android)
+                implementation(libs.koin.androidx.compose)
+
             }
         }
 
@@ -105,6 +128,7 @@ kotlin {
                 // part of KMP’s default source set hierarchy. Note that this source set depends
                 // on common by default and will correctly pull the iOS artifacts of any
                 // KMP dependencies declared in commonMain.
+                implementation(libs.ktor.client.darwin)
             }
         }
     }

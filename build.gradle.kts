@@ -7,4 +7,6 @@ plugins {
     alias(libs.plugins.android.kotlin.multiplatform.library) apply false
     alias(libs.plugins.compose.multiplatform) apply false
     alias(libs.plugins.androidLibrary) apply false
+    alias(libs.plugins.pluginSerialization) apply false
+
 }

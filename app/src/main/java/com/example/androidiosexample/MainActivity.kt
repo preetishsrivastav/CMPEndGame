@@ -13,8 +13,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.androidiosexample.ui.theme.AndroidIosExampleTheme
+import com.example.shared.ApiImplementation
 import com.example.shared.BaseClass
 import com.example.shared.LoginForm
+import com.example.shared.LoginRepoImplementation
+import com.example.shared.MainViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +25,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AndroidIosExampleTheme {
-                LoginForm()
+                Scaffold { paddingValues ->
+                    LoginForm(
+                        modifier = Modifier.padding(paddingValues),
+                    )
+                }
             }
         }
         val baseClass = BaseClass().printMyName()
