@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.androidiosexample.ui.theme.AndroidIosExampleTheme
 import com.example.shared.BaseClass
+import com.example.shared.XAnalytics
 import com.example.shared.presentation.LoginForm
 
 class MainActivity : ComponentActivity() {
@@ -24,6 +25,10 @@ class MainActivity : ComponentActivity() {
                 Scaffold { paddingValues ->
                     LoginForm(
                         modifier = Modifier.padding(paddingValues),
+                        onLoginBtnClick = {
+                            XAnalytics(this).logEvent("LOGIN_SUCCESS", mapOf("username" to "Sanjeet", "password" to "sanjeet123")
+                            )
+                        }
                     )
                 }
             }

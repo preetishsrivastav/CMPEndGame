@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.compose.multiplatform)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.pluginSerialization)
+    alias(libs.plugins.googleServices)
 }
 
 kotlin {
@@ -109,6 +110,10 @@ kotlin {
 
                 implementation(libs.koin.android)
                 implementation(libs.koin.androidx.compose)
+
+                implementation(project.dependencies.platform(libs.firebase.bom))
+                implementation(libs.firebase.analytics)
+                implementation(libs.firebase.config)
 
             }
         }

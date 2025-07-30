@@ -8,5 +8,6 @@ plugins {
     alias(libs.plugins.compose.multiplatform) apply false
     alias(libs.plugins.androidLibrary) apply false
     alias(libs.plugins.pluginSerialization) apply false
+    alias(libs.plugins.googleServices) apply false
 
 }

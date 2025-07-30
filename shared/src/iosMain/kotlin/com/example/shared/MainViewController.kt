@@ -11,5 +11,8 @@ fun MainViewController() = ComposeUIViewController(
 ){
     LoginForm(
         modifier = Modifier,
+        onLoginBtnClick = {
+            XAnalytics.logEvent("login", mapOf("username" to "emilys", "password" to "emilyspass"))
+        }
     )
 }

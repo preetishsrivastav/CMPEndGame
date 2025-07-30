@@ -23,6 +23,7 @@ import org.koin.compose.koinInject
 @Composable
 fun LoginForm(
     modifier: Modifier,
+    onLoginBtnClick: () -> Unit
 ) {
     val mainViewModel : MainViewModel = koinInject<MainViewModel>()
 
@@ -77,6 +78,8 @@ fun LoginForm(
                         )
                     )
                 }
+
+                onLoginBtnClick()
             }, modifier = modifier.fillMaxWidth(0.8f)) {
                 Text("Login")
             }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "681510661871",
+    "project_id": "cmpendgame",
+    "storage_bucket": "cmpendgame.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681510661871:android:4ca96174a50c462a51f51a",
+        "android_client_info": {
+          "package_name": "com.example.androidiosexample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbdqfjY05DJIOPDy2gzo_uiSlRK1wyTU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

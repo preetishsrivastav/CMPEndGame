@@ -20,6 +20,11 @@ koin = "4.0.0"
 koinCompose = "4.1.0"
 koinComposeMultiplatform = "4.1.0"
 koinViewModel = "4.1.0"
+googleServices = "4.4.3"
+bomVersion = "34.0.0"
+config-version = "22.1.1"
+
+
 
 
 [libraries]
@@ -61,6 +66,11 @@ koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
 koin-androidx-viewmodel = { module = "io.insert-koin:koin-androidx-viewmodel", version.ref = "koin" }
 
+firebase-bom = {module = "com.google.firebase:firebase-bom" , version.ref = "bomVersion"}
+firebase-analytics = {module = "com.google.firebase:firebase-analytics"}
+firebase-config = {module ="com.google.firebase:firebase-config",version.ref = "config-version"}
+
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
@@ -70,3 +80,5 @@ android-kotlin-multiplatform-library = { id = "com.android.kotlin.multiplatform.
 compose-multiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 pluginSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+googleServices = {  id = "com.google.gms.google-services", version.ref = "googleServices"}
+
