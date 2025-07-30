@@ -1,4 +1,4 @@
-package com.example.shared
+package com.example.shared.presentation
 
 sealed class ApiResponse<out T> {
     data object Loading : ApiResponse<Nothing>()

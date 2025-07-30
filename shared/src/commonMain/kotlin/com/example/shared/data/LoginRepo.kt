@@ -1,7 +1,8 @@
-package com.example.shared
+package com.example.shared.data
 
+import com.example.shared.presentation.ApiResponse
 import kotlinx.coroutines.flow.Flow
 
-interface Api {
+interface LoginRepo {
     suspend fun createUser(loginRequest: LoginRequest): Flow<ApiResponse<LoginResponse>>
 }

@@ -1,4 +1,4 @@
-package com.example.shared
+package com.example.shared.data
 
 object ApiEndpoints {
     const val BASE_URL = "https://dummyjson.com/"

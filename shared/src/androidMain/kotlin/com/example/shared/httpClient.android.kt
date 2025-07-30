@@ -1,6 +1,6 @@
 package com.example.shared
 
-import com.example.shared.ApiEndpoints.BASE_URL
+import com.example.shared.data.ApiEndpoints.BASE_URL
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.okhttp.OkHttp
 import io.ktor.client.plugins.HttpTimeout
