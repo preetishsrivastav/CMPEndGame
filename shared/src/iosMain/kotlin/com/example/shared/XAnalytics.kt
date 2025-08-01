@@ -21,6 +21,8 @@ object XAnalytics : IXAnalytics {
 
     interface FirebaseIosCallback {
         fun logEvent(eventId: String, params: String)
+
+
     }
 
     private var firebaseIosCallback: FirebaseIosCallback? = null

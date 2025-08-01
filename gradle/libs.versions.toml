@@ -23,9 +23,7 @@ koinViewModel = "4.1.0"
 googleServices = "4.4.3"
 bomVersion = "34.0.0"
 config-version = "22.1.1"
-
-
-
+moengageCore = "13.02.00"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -70,6 +68,7 @@ firebase-bom = {module = "com.google.firebase:firebase-bom" , version.ref = "bom
 firebase-analytics = {module = "com.google.firebase:firebase-analytics"}
 firebase-config = {module ="com.google.firebase:firebase-config",version.ref = "config-version"}
 
+moengage-sdk = {module = "com.moengage:moe-android-sdk", version.ref = "moengageCore"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

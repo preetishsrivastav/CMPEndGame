@@ -13,6 +13,7 @@ fun MainViewController() = ComposeUIViewController(
         modifier = Modifier,
         onLoginBtnClick = {
             XAnalytics.logEvent("login", mapOf("username" to "emilys", "password" to "emilyspass"))
+            MoengageAnalysis.trackEvent(eventName = "LOGIN_SUCCESS", attributes = mapOf("username" to "Yulu", "password" to "emilyspass"))
         }
     )
 }
